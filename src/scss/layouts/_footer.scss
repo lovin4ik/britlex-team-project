@@ -1,23 +1,18 @@
 .footer {
 	padding-bottom: 46px;
-	padding-top: 84px;
 	background-color: #fcffd2;
 
 	@include media(md) {
 		padding-bottom: 26px;
-		padding-top: 169px;
 	}
 	@include media(lg) {
 		padding-bottom: 15px;
-		padding-top: 131px;
 	}
 	@include media(xl) {
 		padding-bottom: 24px;
-		padding-top: 180px;
 	}
 	@include media(xxl) {
 		padding-bottom: 64px;
-		padding-top: 165px;
 	}
 
 	.footer-nav {
@@ -64,7 +59,7 @@
 				width: 290px;
 				height: 1px;
 				position: absolute;
-				background-color: map-get($colors, psevdo);
+				background-color:#C4C4C4;
 				left: -160%;
 				top: -50%;
 
@@ -85,7 +80,7 @@
 			}
 		}
 		.footer-nav__span {
-			color: map-get($colors, text);
+			color: map-get($colors, secondary);
 		}
 		.footer-nav-list {
 			display: flex;

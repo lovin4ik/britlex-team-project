@@ -1,120 +1,127 @@
-.header {
-	background-color: #fcffd2;
 
+.header {
 	padding-top: 36px;
-	@media screen and (min-width: getBreakPoint(md)) {
-		padding-top: 39px;
+	@media screen and (min-width: getBreakPoint(md)){
+	 padding-top: 39px;
 	}
-	@media screen and (min-width: getBreakPoint(lg)) {
-		padding-top: 39px;
+	@media screen and (min-width: getBreakPoint(lg)){
+	 padding-top: 39px;
 	}
-	@media screen and (min-width: getBreakPoint(xl)) {
-		padding-top: 30px;
+	@media screen and (min-width: getBreakPoint(xl)){
+	 padding-top: 30px;
 	}
-	@media screen and (min-width: getBreakPoint(xxl)) {
-		padding-top: 57px;
+	@media screen and (min-width: getBreakPoint(xxl)){
+	 padding-top: 57px;
 	}
-	.header-nav {
-		display: flex;
-		align-items: center;
-		margin-right: 15px;
-		margin-left: 14px;
-		@media screen and (min-width: getBreakPoint(md)) {
-			margin-right: 48px;
-			margin-left: 32px;
-		}
-		@media screen and (min-width: getBreakPoint(lg)) {
-			margin-left: 39px;
-			margin-right: 38px;
-		}
-		@media screen and (min-width: getBreakPoint(xl)) {
-			margin-left: 31px;
-			margin-right: 31px;
-		}
-		@media screen and (min-width: getBreakPoint(xxl)) {
-			margin-left: 20px;
-			margin-right: 20px;
-		}
-		.header-nav-list {
-			display: none;
-			@media screen and (min-width: getBreakPoint(xl)) {
-				display: flex;
-				margin-left: 167px;
-			}
-			.header-nav-list__item:not(:last-of-type) {
-				margin-right: 30px;
-			}
-			.header-nav-list__link {
-				font-weight: 500;
-				font-size: 16px;
-				color: map-get($colors, primary);
-				@media screen and (min-width: getBreakPoint(xxl)) {
-					font-size: 20px;
-				}
-			}
-			@media screen and (min-width: getBreakPoint(xxl)) {
-				margin-left: 253px;
-			}
-		}
-		.header-nav__input {
-			display: none;
-		}
-		.header-nav__button {
-			display: none;
-			@media screen and (min-width: getBreakPoint(xl)) {
-				display: block;
-				border: 2px solid map-get($colors, primary);
-				border-radius: 5px;
-				background-color: transparent;
-				padding: 8px 40px;
-				margin-left: 100px;
-				font-size: 18px;
-			}
-			@media screen and (min-width: getBreakPoint(xxl)) {
-				font-size: 24px;
-				padding: 8px 50px;
-				margin-left: 240px;
-			}
-		}
-		.header-nav__label {
-			margin-left: 175px;
-			@media screen and (max-width: getBreakPoint(sm)) {
-				margin-left: 55vw;
-			}
-			@media screen and (min-width: getBreakPoint(md)) {
-				margin-left: 360px;
-			}
-			@media screen and (min-width: getBreakPoint(lg)) {
-				margin-left: 570px;
-			}
-			@media screen and (min-width: getBreakPoint(xl)) {
-				display: none;
-			}
-		}
-		.header-nav__svg {
-			@media screen and (min-width: getBreakPoint(md)) {
-				width: 42px;
-				height: 24px;
-			}
-			@media screen and (min-width: getBreakPoint(lg)) {
-				width: 30px;
-				height: 17px;
-			}
-		}
-		.header-nav__title {
-			font-size: 24px;
-			@media screen and (min-width: getBreakPoint(md)) {
-				font-size: 30px;
-			}
-			@media screen and (min-width: getBreakPoint(lg)) {
-				font-size: 30px;
-			}
-			@media screen and (min-width: getBreakPoint(xxl)) {
-				font-size: 36px;
-			}
-		}
-		.header-nav__span {
-			color: map-get($colors, text);
-		}
+	.header-nav{
+	 display: flex;
+	 align-items: center;
+	 margin-right: 15px;
+	 margin-left: 14px;
+	 @media screen and (min-width: getBreakPoint(md)){
+		 margin-right: 48px;
+		 margin-left: 32px;
+	 }
+	 @media screen and (min-width: getBreakPoint(lg)){
+		 margin-left: 39px;
+		 margin-right: 38px;
+	 }
+	 @media screen and (min-width: getBreakPoint(xl)){
+		 margin-left: 31px;
+		 margin-right: 31px;
+	 }
+	 @media screen and (min-width: getBreakPoint(xxl)){
+		 margin-left: 20px;
+		 margin-right: 20px;
+	 }
+	 .header-nav-list{
+		 display: none;
+		 @media screen and (min-width: getBreakPoint(xl)){
+			 display: flex;
+			 margin-left: 167px;
+		 }
+		 .header-nav-list__item:not(:last-of-type){
+			 margin-right: 30px;
+		 }
+		 .header-nav-list__link{
+			 font-weight: 500;
+			 font-size: 16px;
+			 color: map-get($colors, primary);
+			 @media screen and (min-width: getBreakPoint(xxl)){
+				 font-size: 20px;
+			 }
+		 }
+		 @media screen and (min-width: getBreakPoint(xxl)){
+			 margin-left: 253px;
+		 }
+	 }
+	 .header-nav__input{
+		 display: none;
+	 }
+	 .header-nav__button{
+		 display: none;
+		 transition: background-color 0.3s ease;
+		 @media screen and (min-width: getBreakPoint(xl)){
+		  display: block;
+		  border: 2px solid map-get($colors, primary);
+		  border-radius: 5px;
+		  background-color: transparent;
+		  padding: 8px 40px;
+		  margin-left: 100px;
+		  font-family: getFont('poppins');
+		  font-weight: 400;
+		  font-size: 18px;  
+		 }
+		 @media screen and (min-width: getBreakPoint(xxl)){
+			 font-size: 24px;
+			 padding: 8px 50px;
+			 margin-left: 240px;
+		 }
+	 }
+	 .header-nav__button:hover{
+		 background-color:map-get($colors, dark);
+		 color:map-get($colors, white)
+	 }
+	 .header-nav__label{
+		 margin-left: 175px;
+		 @media screen and (max-width: getBreakPoint(sm)){
+			 margin-left: 55vw;
+		 }
+		 @media screen and (min-width: getBreakPoint(md)){
+			 margin-left: 360px;
+		 }
+		 @media screen and (min-width: getBreakPoint(lg)){
+			 margin-left: 570px;
+		 }
+		 @media screen and (min-width: getBreakPoint(xl)){
+			 display: none;
+		 }
+	 }
+	 .header-nav__svg{
+		 @media screen and (min-width: getBreakPoint(md)){
+			 width: 42px;
+			 height: 24px;
+		 }
+		 @media screen and (min-width: getBreakPoint(lg)){
+			 width: 30px;
+			 height: 17px;
+		 }
+	 }
+	 .header-nav__title{
+		 font-weight: 400;
+		 font-size: 24px;
+		 @media screen and (min-width: getBreakPoint(md)){
+			 font-size: 30px;
+		 }
+		 @media screen and (min-width: getBreakPoint(lg)){
+			 font-size: 30px;
+		 }
+		 @media screen and (min-width: getBreakPoint(xxl)){
+			 font-size: 36px;
+		 }
+	 }
+	 .header-nav__span{
+		 color:map-get($colors, secondary)
+	 }
 	}
 }
